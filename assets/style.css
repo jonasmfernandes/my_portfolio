@@ -9,7 +9,79 @@
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 20%;
+  height: 100vh;
+  background-color: transparent;
+  flex-direction: column;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.8em;
+}
+header span {
+  color: rgb(6, 204, 204);
+  font-weight: 500;
+}
+header p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2em;
+}
+header div {
+  border-color: white;
+  border: 2px solid;
+  padding: 10px 20px;
+  margin-top: 2%;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.5s;
+}
+header div p {
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+header div .fa-solid {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  background-color: transparent;
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+header div:hover {
+  background-color: rgb(6, 204, 204);
+  border-color: rgb(6, 204, 204);
+}
+header div:hover .fa-solid {
+  -webkit-animation: rotate 0.5s linear 1 forwards;
+          animation: rotate 0.5s linear 1 forwards;
+}
+
+article {
+  display: flex;
+  justify-content: center;
   align-items: center;
   color: white;
   padding: 0 20%;
@@ -17,22 +89,25 @@ header {
   background-color: transparent;
   cursor: pointer;
 }
-header h1:hover {
+article h1:hover {
   color: aqua;
   transition: 0.2s;
 }
-header ul {
+article ul {
   list-style: none;
   display: flex;
 }
-header ul li {
+article ul li {
   margin-right: 20px;
   transition: 0.2s;
 }
-header ul li:hover {
+article ul li:hover {
   color: aqua;
   transition: 0.2s;
   box-shadow: 0px 2px 2px -1px aqua;
+}
+article ul .ctt {
+  margin-right: 0px;
 }
 
 section {
